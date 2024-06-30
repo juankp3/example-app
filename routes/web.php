@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\ComponentsController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+
 
 Route::get('/', function () {
     // return view('dashboard');
@@ -9,3 +11,9 @@ Route::get('/', function () {
 });
 
 Route::get('/test', [HomeController::class, 'index']);
+Route::get('/components',[ComponentsController::class, 'index']);
+
+
+
+
+
