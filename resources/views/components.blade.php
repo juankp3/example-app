@@ -8,7 +8,9 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-    @vite('resources/sass/app.sass', 'resources/css/app.css', 'resources/js/app.js')
+
+    @vite('resources/sass/app.sass')
+
 
 </head>
 <body>
@@ -25,6 +27,35 @@
     <div class="container">
         mi prueba de sass
     </div>
+
+
+
+
+    <x-sectiontitle>
+        <x-slot name="vowel">A</x-slot>
+        <x-slot name="titlesection">Población Total</x-slot>
+    </x-sectiontitle>
+
+    <x-prueba>
+        <x-slot name="title">Totals</x-slot>
+        <x-slot name="price">13.5333</x-slot>
+    </x-prueba>
+
+<x-sectiontitle>
+        <x-slot name="vowel">B</x-slot>
+        <x-slot name="titlesection">Variabilidad Anual</x-slot>
+    </x-sectiontitle>
+
+    <x-prueba>
+        <x-slot name="title">TMB</x-slot>
+        <x-slot name="price">9 meses</x-slot>
+    </x-prueba>
+
+    <x-prueba2>
+        <x-slot name="titleicon">Edad promedio</x-slot>
+        <x-slot name="age">43 años</x-slot>
+    </x-prueba2>
+
 
 </body>
 </html>
